@@ -4,6 +4,14 @@
     <input id="userInput" type="text" />
     <button id="submit">Submit</button>
     <div id="conversation"></div>
-    <script src="script.js"></script>
+    <script src="script.js"></script>function generateResponse(message) {
+ console.log("generateResponse function called with message:", message);
+ const response = You said: ${message}. That's interesting!;
+ setTimeout(() => {
+ console.log("Displaying system response");
+ displayMessage('system', response); 
+ }, 500); 
+}
+    
   </body>
 </html>
